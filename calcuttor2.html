@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+
+            background: rgb(152, 158, 171);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            
+
+        }
+    </style>
 </head>
+
 <body>
-    <input   id="finalanswer"  name="answers" type="text">
+    <div class="container">
+        <input id="finalanswer" name="answers" type="text">
 
 
-    <input  onclick="answers .value += ' 1'" type="button" value="1" >
-    <input type="button" value="2" onclick="answers .value += ' 2'"/>
-    <input type="button" value="3" onclick="answers .value += ' 3'"/> 
-    <br>
+        <div>
+            <input onclick="answers .value += ' 1'" type="button" value="1">
+            <input type="button" value="2" onclick="answers .value += ' 2'" />
+            <input type="button" value="3" onclick="answers .value += ' 3'" />
+        </div>
+        
+        <div>
+            <input type="button" value="4" onclick="answers .value += ' 4'">
+            <input type="button" value="5" onclick="answers .value += ' 5'">
+            <input type="button" value="6" onclick="answers .value += ' 6'">
 
-    <input type="button" value="4" onclick="answers .value += ' 4'">
-    <input type="button" value="5" onclick="answers .value += ' 5'">
-    <input type="button" value="6" onclick="answers .value += ' 6'"> 
-    <br>
+        </div>
 
-    <input type="button" value="7" onclick="answers .value += ' 7'">
-    <input type="button" value="8" onclick="answers .value += ' 8'">
-    <input type="button" value="9" onclick="answers .value += ' 9'"> 
-    <br>
+        <div>
+            <input type="button" value="7" onclick="answers .value += ' 7'">
+            <input type="button" value="8" onclick="answers .value += ' 8'">
+            <input type="button" value="9" onclick="answers .value += ' 9'">
 
-    <input type="button" value="+" onclick="answers .value += ' +'">
-    <input type="button" value="-" onclick="answers .value += ' -'">
-    <input type="button" value="/" onclick="answers .value += ' /'"> 
-    <br>
+        </div>
 
-    <input type="button" value="0" onclick="answers .value += ' 0'">
-    <input type="button" value="*" onclick="answers .value += ' *'">
-    <input type="button" value="=" onclick="answers.value = eval(answers.value) ' 3'"/> 
-    <br>
-    
+        <div>
+            <input type="button" value="+" onclick="answers .value += ' +'">
+            <input type="button" value="-" onclick="answers .value += ' -'">
+            <input type="button" value="/" onclick="answers .value += ' /'">
+
+        </div>
+
+        <div>
+            <input type="button" value="0" onclick="answers .value += ' 0'">
+            <input type="button" value="*" onclick="answers .value += ' *'">
+            <input type="button" value="=" onclick="answers.value = eval(answers.value) +='3' " />
+        </div>
+
+    </div><!--container end-->
+
+
 </body>
+
 </html>
