@@ -18,10 +18,7 @@ addUserBtn.onclick = () => {
     // const name = userNameTextField.value.trim();
     if (name === "") return; // Prevent adding empty names  
     if (edit_id != null) {
-        userArray.splice(edit_id, 1, {
-            name: name,
-
-        });
+        userArray.splice(edit_id, 1, { name: name, });
         edit_id = null;
         addUserBtn.innerText = 'Add Text';
     } else userArray.push({ name: name });
