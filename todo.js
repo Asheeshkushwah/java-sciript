@@ -11,7 +11,7 @@ adduserBtn.onclick = () => {
     // console.log(userArray)
     saveData(userArray)
 }
-
+    
 function saveData(userArray) {
     // console.log(userArray)
     let str = JSON.stringify("user",str)  //string format
