@@ -7,11 +7,11 @@ adduserBtn.onclick = () => {
     const name = usernametextfield.value
     //alert(name)
     // console.log(name)
-    userArray.push({ 'name': name })
+    userArray.push({'name':name})
     // console.log(userArray)
     saveData(userArray)
 }
-    
+
 function saveData(userArray) {
     // console.log(userArray)
     let str = JSON.stringify("user",str)  //string format
